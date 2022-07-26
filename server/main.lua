@@ -27,7 +27,7 @@ local function sendToDiscord(title, message)
 					}
 				}
 			}
-			PerformHttpRequest(Config.Webhook , function(err, text, headers) end, 'POST', json.encode({username = "Admin Zone", embeds = LogArray}), { ['Content-Type'] = 'application/json' })
+			PerformHttpRequest(Config.Webhook , function(err, text, headers) end, 'POST', json.encode({username = "WIPE PLAYER", embeds = LogArray}), { ['Content-Type'] = 'application/json' })
 		end
 	end
 end
