@@ -38,8 +38,8 @@ RegisterNetEvent("qb-wipeplayer:server:onjoin", function(source)
     local rs = MySQL.Sync.fetchScalar('SELECT COUNT(*) FROM player_wipes WHERE citizenid = ?', {Player.PlayerData.citizenid})
     if rs == 1 then
         Wait(25 * 1000)
+	local fullname = Player.PlayerData.charinfo.firstname .." "..Player.PlayerData.charinfo.lastname
         TriggerClientEvent('qb-wipeplayer:client:createNewChar', Player.PlayerData.source)
-        local fullname = Player.PlayerData.charinfo.firstname .." "..Player.PlayerData.charinfo.lastname
         TriggerClientEvent('QBCore:Notify', -1, Lang:t('message.reason', {naam = fullname}), "success", 15000)
         MySQL.Async.execute('DELETE FROM player_wipes WHERE citizenid = ?', {Player.PlayerData.citizenid})
         sendToDiscord("PLAYER ACCOUNT WIPE", Lang:t('message.reason', {naam = fullname}))
