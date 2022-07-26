@@ -15,12 +15,12 @@
 
 
 ## How it works
-- To add a player to the wipe list type: `/wipe-list-player [server id]`
+- To add a player to the wipe list type: `/wipe-list-player [player server id]`
 - The next time this player joins the server, this account will be deleted automatically.
 - 
 - 
 - You can also delete the player right away if this player is online at the moment.
-- to delete a player right away type `/wipe-player [server id]`
+- to delete a player right away type `/wipe-player [player server id]`
 - 
 - 
 - You can also add a citizenid to the list
