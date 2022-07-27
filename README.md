@@ -30,4 +30,4 @@
 
 
 ## NOTE
-- The wipe list will automatically delete a account when this accound is wiped.
+- The wipe list will automatically delete a account when this account is wiped.
