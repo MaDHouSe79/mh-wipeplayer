@@ -4,7 +4,7 @@
 - why i do this is to let them know that there account is gone in just a few secs.
 - even if they have played for many hours.
 - 
-- I have no mery with cheaters.
+- I have no mercy for cheaters
 
 
 
